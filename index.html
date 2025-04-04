@@ -1,87 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to my Portfolio. Showcasing my projects and skills.">
-    <title>Vivian Kairuthi | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vivian Kairuthi | Web Developer & VA</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-    <!-- Hero Section -->
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <h2>I'm a Virtual Assistant & Developer</h2>
-    </header>
+  <!-- Hero Section -->
+  <header>
+    <div class="profile">
+      <img src="images/Profile picture.jpg" alt="Vivian's Profile Picture" />
+    </div>
+    <h1>Empowering Businesses with Seamless Digital Solutions</h1>
+    <h2>Web Developer & Virtual Assistant</h2>
+  </header>
 
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+  <!-- Navigation -->
+  <nav>
+    <button onclick="document.getElementById('about').scrollIntoView()">About</button>
+    <button onclick="document.getElementById('education').scrollIntoView()">Education</button>
+    <button onclick="document.getElementById('skills').scrollIntoView()">Skills</button>
+    <button onclick="document.getElementById('projects').scrollIntoView()">Projects</button>
+    <button onclick="document.getElementById('contact').scrollIntoView()">Contact</button>
+  </nav>
 
-    <!-- About Section -->
-    <section id="about">
-        <img src="profile.jpg" alt="Profile Picture">
-        <div class="about-text">
-            <h2>About Me</h2>
-            <p>Hi, I’m Vivian, a Virtual Assistant specializing in Web Development & Workflow Automation. I help businesses streamline operations using tech-driven solutions.</p>
-            <a href="Vivian-Kairuthi-Gacheri-Resume.pdf" download class="btn">Download CV</a>
-        </div>
-    </section>
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hey there! I’m Vivian, a Web Developer and Virtual Assistant who loves to mix design, functionality, and efficiency to create smooth digital experiences.
+    </p>
+    <p>
+      With a background in customer service, I bring a user-first approach to both my web development and VA tasks. Whether I’m coding a website or optimizing business processes, my goal is always clarity, functionality, and real impact.
+    </p>
+    <a href="Vivian-Kairuthi-Gacheri-Resume.pdf" download class="btn">Download CV</a>
+  </section>
 
-    <!-- Education -->
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li>Kiriri Women's University - Diploma in ICT (2021-2023)</li>
-            <li>Power Learn Project - Software Engineering (2025-Ongoing)</li>
-        </ul>
-    </section>
+  <!-- Education Section -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="edu-card">Kiriri Women's University - Diploma in ICT (2021–2023)</div>
+    <div class="edu-card">Power Learn Project - Software Engineering (2025–Ongoing)</div>
+  </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Python</li>
-            <li>SQL</li>
-        </ul>
-    </section>
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill">
+        <img src="icons/html.png" alt="HTML" />
+        <p>HTML</p>
+      </div>
+      <div class="skill">
+        <img src="icons/css.png" alt="CSS" />
+        <p>CSS</p>
+      </div>
+      <div class="skill">
+        <img src="icons/python.png" alt="Python" />
+        <p>Python</p>
+      </div>
+      <div class="skill">
+        <img src="icons/sql.png" alt="SQL" />
+        <p>SQL</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>E-Commerce Website</h3>
-                <p>Designed an online store selling gloss products.</p>
-            </div>
-            <div class="project-card">
-                <h3>Workflow Automation Tool</h3>
-                <p>Built a system to improve business efficiency.</p>
-            </div>
-        </div>
-    </section>
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>E-Commerce Website</h3>
+        <p>Designed an online store selling gloss products.</p>
+      </div>
+      <div class="project-card">
+        <h3>Workflow Automation Tool</h3>
+        <p>Built a system to improve business efficiency.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:kairuthivivian0@gmail.com">kairuthivivian0@gmail.com</a></p>
-    </section>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-container">
+      <div class="contact-item">
+        <img src="icons/gmail.png" alt="Gmail" />
+        <a href="mailto:kairuthivivian0@gmail.com">kairuthivivian0@gmail.com</a>
+      </div>
+      <div class="contact-item">
+        <img src="icons/whatsapp.png" alt="WhatsApp" />
+        <a href="https://wa.me/254791426006" target="_blank">Chat on WhatsApp</a>
+      </div>
+      <div class="contact-item">
+        <img src="icons/phone.png" alt="Phone" />
+        <a href="tel:+254791426006">+254791426006</a>
+      </div>
+      <div class="contact-item">
+        <img src="icons/linkedin.png" alt="LinkedIn" />
+        <a href="https://www.linkedin.com/in/viviankairuthig" target="_blank">View LinkedIn</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Vivian Kairuthi | All Rights Reserved</p>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Vivian Kairuthi | All Rights Reserved</p>
+  </footer>
 
 </body>
 </html>
